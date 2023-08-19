@@ -1,14 +1,12 @@
 require 'sinatra'
 require 'sinatra/reloader'
-require 'active_record'
+# require 'active_record'
 
-ActiveRecord::Base.establish_connection(
-  "adapter" => "sqlite3",
-  "database" => "./bbs.db"
-)
+# ActiveRecord::Base.establish_connection(
+# )
 
-class Comment < ActiveRecord::Base
-end
+# class Comment < ActiveRecord::Base
+# end
 
 get '/' do
   @memo = Memo.order("id desc").all
