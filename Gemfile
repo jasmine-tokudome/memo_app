@@ -9,3 +9,5 @@ gem 'webrick'
 gem 'sinatra-contrib'
 
 gem 'redcarpet'
+
+gem 'weather_today'
